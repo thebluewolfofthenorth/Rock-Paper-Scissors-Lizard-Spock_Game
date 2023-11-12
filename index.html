@@ -3,11 +3,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Rock-Paper-Scissors</title>
+    <title>Rock Paper Scissors Lizard Spock</title>
 </head>
 <body>
-    <div id="gameboard"></div>
 
+    <header>
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+    </header>
+
+    <main>
+        <div id="choices">
+            <button data-type="rock" class="btn">Rock</button>
+            <button data-type="paper" class="btn">Paper</button>  
+            <button data-type="scissors" class="btn">Scissors</button>  
+            <button data-type="lizard" class="btn">Lizard</button>  
+            <button data-type="spock" class="btn">Spock</button>  
+        </div>
+
+        <div class="result-area">
+
+        </div>
+
+        <div class="scoreboard-area">
+            <p>Player Score:<span id="player-score">0</span></p>
+            <p>Computer Score:<span id="computer-score">0</span></p>
+            <p>Tries Left:<span id="tries-left">5</span></p>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <p>Created by Andrés V.S </p>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
