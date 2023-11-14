@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
         choiceButtons.forEach(button => button.disabled = true);
         const resultArea = document.querySelector('.result-area');
         resultArea.innerHTML += `<p>Game Over! Final Score - Player: ${playerScore}, Computer: ${computerScore}</p>`;
-        // Optionally, add a button or link to restart the game
+        // Maybe add a button or link to restart the game
     }
     
 });
