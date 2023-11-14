@@ -3,26 +3,31 @@ document.addEventListener("DOMContentLoaded", () => {
     const computerScoreEl = document.getElementById("computer-score");
     const triesLeftEl = document.getElementById("tries-left");
     const choiceButtons = document.querySelectorAll(".btn");
-    
+    const restartButton = document.getElementById("restart-game");
+
     let playerScore = 0;
     let computerScore = 0;
-    let triesLeft = 5; 
-    
+    let triesLeft = 5;
+
     choiceButtons.forEach(button => {
-        button.addEventListener("click", function() {
-            if (triesLeft === 0) return; 
+        button.addEventListener("click", function () {
+            if (triesLeft === 0) return;
             const playerChoice = this.getAttribute('data-type');
             const computerChoice = getComputerChoice();
             const winner = getWinner(playerChoice, computerChoice);
             updateScores(winner);
             displayResult(playerChoice, computerChoice, winner);
             triesLeft--;
-            triesLeftEl.textContent = triesLeft; 
-            
+            triesLeftEl.textContent = triesLeft;
+
             if (triesLeft === 0) {
-                endGame(); 
+                endGame();
             }
         });
+    });
+
+    restartButton.addEventListener("click", function () {
+        restartGame();
     });
 
     function getComputerChoice() {
@@ -39,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
             lizard: ['spock', 'paper'],
             spock: ['scissors', 'rock']
         };
-    
+
         if (playerChoice === computerChoice) {
             return 'tie';
         } else if (winningCombinations[playerChoice].includes(computerChoice)) {
@@ -48,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return 'computer';
         }
     }
-    
+
 
     function updateScores(winner) {
         if (winner === 'player') {
@@ -58,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
             computerScore++;
             computerScoreEl.textContent = computerScore;
         }
-    
+
     }
 
     function displayResult(playerChoice, computerChoice, winner) {
@@ -70,13 +75,29 @@ document.addEventListener("DOMContentLoaded", () => {
             <p>${resultMessage}</p>
         `;
     }
-    
-    
+
+
     function endGame() {
         choiceButtons.forEach(button => button.disabled = true);
         const resultArea = document.querySelector('.result-area');
         resultArea.innerHTML += `<p>Game Over! Final Score - Player: ${playerScore}, Computer: ${computerScore}</p>`;
-        // Maybe add a button or link to restart the game
+        restartButton.style.display = 'block';
     }
-    
+
+
+    function restartGame() {
+        playerScore = 0;
+        computerScore = 0;
+        triesLeft = 5;
+        playerScoreEl.textContent = playerScore;
+        computerScoreEl.textContent = computerScore;
+        triesLeftEl.textContent = triesLeft;
+        
+        const resultArea = document.querySelector('.result-area');
+        resultArea.innerHTML = ''; 
+        restartButton.style.display = 'none'; 
+        
+        choiceButtons.forEach(button => button.disabled = false); 
+    }
+
 });
