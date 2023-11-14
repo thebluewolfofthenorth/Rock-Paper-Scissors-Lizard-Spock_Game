@@ -23,7 +23,7 @@ header{
 /*buttom styling*/
 .btn{
     display: inline-block;
-    width: 10px 20px;
+    width: 100%;
     margin: 1rem auto;
     padding: 1.1rem;
     border: none;
@@ -40,19 +40,19 @@ header{
 }
 
 /*Specific Button Colors*/
-#rock{
+.btn[data-type="rock"]{
     background-color:#E0E0E0 ;
 }
-#paper{
+.btn[data-type="paper"]{
     background-color:#C0C0C0 ;
 }
-#scissors{
+.btn[data-type="scissors"]{
     background-color:#A0A0A0 ;
 }
-#lizard{
+.btn[data-type="lizard"] {
     background-color: #808080;
 }
-#spock{
+.btn[data-type="spock"]{
     background-color:#505050 ;
 }
 
