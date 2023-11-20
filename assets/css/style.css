@@ -20,6 +20,14 @@ header {
     font-weight: 700;
 }
 
+/* Button Alignment */
+#choices {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
 /* Button styling */
 .btn img {
     width: 100%; 
@@ -56,6 +64,26 @@ header {
 .btn[data-type="spock"] {
     background-color: transparent; 
 }
+
+/* Choices Display Styling */
+.choices-display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.choice-display {
+    width: 30%;
+    text-align: center;
+}
+
+.result-area {
+    width: 20%;
+    text-align: center;
+}
+
+
 
 /* Scoreboard Styling */
 .scoreboard {
