@@ -16,8 +16,8 @@ body {
 
 header {
     padding: 1.5rem 0;
-    font-size: 2.4rem; 
-    font-weight: 700;
+    font-size: 1.4rem; 
+    font-weight: 100;
 }
 
 /* Button Alignment */
@@ -71,15 +71,18 @@ header {
 /* Choices Display Styling */
 
 .choices-display {
+    height: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 1rem 0;
+    margin-bottom: 1rem;
 }
 
 .choice-display, .result-area {
     flex: 1;
     text-align: center;
+    height: 100%;
 }
 
 .choice-display img {
