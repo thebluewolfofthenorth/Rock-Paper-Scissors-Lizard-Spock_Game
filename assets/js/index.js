@@ -68,11 +68,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function displayResult(playerChoice, computerChoice, winner) {
-        // Update the player and computer choice displays
-        playerChoiceDisplay.innerHTML = `<p>Your choice: <strong>${playerChoice}</strong></p>`;
-        computerChoiceDisplay.innerHTML = `<p>Computer's choice: <strong>${computerChoice}</strong></p>`;
+        const basePath = 'assets/images/element/';
 
-        // Update the result area with the result message
+        playerChoiceDisplay.innerHTML = `
+            <img src="${basePath + playerChoice + '.png'}" alt="${playerChoice}">
+            <p>Your choice: <strong>${playerChoice}</strong></p>`;
+        computerChoiceDisplay.innerHTML = `
+            <img src="${basePath + computerChoice + '.png'}" alt="${computerChoice}">
+            <p>Computer's choice: <strong>${computerChoice}</strong></p>`;
+
         const resultMessage = winner === 'tie' ? 'It is a tie!' : winner === 'player' ? 'You win!' : 'Computer wins!';
         resultArea.innerHTML = `<p>${resultMessage}</p>`;
     }
