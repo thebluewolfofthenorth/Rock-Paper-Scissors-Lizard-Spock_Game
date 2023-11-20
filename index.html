@@ -18,6 +18,24 @@
     </header>
 
     <main>
+        <div class="scoreboard">
+            <div id="player-info" class="score-info">
+                <h2>Player</h2>
+                <p>Score: <span id="player-score">3</span></p>
+            </div>
+            <div id="game-info" class="score-info">
+                <h2>Game Info</h2>
+                <p>Tries Left: <span id="tries-left">5</span></p>
+            </div>
+            <div id="computer-info" class="score-info">
+                <h2>Computer</h2>
+                <p>Score: <span id="computer-score">2</span></p>
+            </div>
+        </div>
+
+
+
+
         <div id="choices">
             <button data-type="rock" class="btn">Rock</button>
             <button data-type="paper" class="btn">Paper</button>
@@ -28,12 +46,6 @@
 
         <div class="result-area">
 
-        </div>
-
-        <div class="scoreboard-area">
-            <p>Player Score:<span id="player-score">0</span></p>
-            <p>Computer Score:<span id="computer-score">0</span></p>
-            <p>Tries Left:<span id="tries-left">5</span></p>
         </div>
 
         <button id="restart-game" style="display: none;">Restart Game</button>
