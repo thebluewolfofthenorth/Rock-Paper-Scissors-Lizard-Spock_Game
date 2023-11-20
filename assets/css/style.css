@@ -16,59 +16,58 @@ body {
 
 header {
     padding: 1.5rem 0;
-    font-size: 2.4rem; /* Increased font size */
+    font-size: 2.4rem; 
     font-weight: 700;
 }
 
 /* Button styling */
+.btn img {
+    width: 100%; 
+    height: auto; 
+}
+
 .btn {
-    display: block; /* Changed to block to fill the width of the container */
-    width: 80%; /* Adjusted width */
-    margin: 10px auto; /* Centered margin for auto left and right */
-    padding: 1rem; /* Uniform padding */
+    display: flex; 
+    width: 30%;
+    height: 30%;
+    margin: 1rem auto; 
+    padding: 0rem; 
     border: none;
     border-radius: 0.5rem;
-    font-size: 1.5rem; /* Slightly larger text */
+    font-size: 1.5rem; 
     cursor: pointer;
     transition: 0.3s;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .btn:hover {
     background-color: #C0C0C0;
 }
 
 /* Specific Button Colors */
-.btn[data-type="rock"] {
-    background-color: #E0E0E0;
-}
-
-.btn[data-type="paper"] {
-    background-color: #C0C0C0;
-}
-
-.btn[data-type="scissors"] {
-    background-color: #A0A0A0;
-}
-
-.btn[data-type="lizard"] {
-    background-color: #808080;
-}
-
+.btn[data-type="rock"],
+.btn[data-type="paper"],
+.btn[data-type="scissors"],
+.btn[data-type="lizard"],
 .btn[data-type="spock"] {
-    background-color: #505050;
+    background-color: transparent; 
 }
 
 /* Scoreboard Styling */
 .scoreboard {
     display: flex;
-    justify-content: space-around; /* Distributes space around elements */
-    margin: 1rem 0; /* Top and bottom margin */
-    font-size: 1.2rem; /* Adjusted font size */
+    justify-content: space-around; 
+    margin: 1rem 0; 
+    font-size: 1.2rem; 
 }
 
 .score-info {
-    width: 30%; /* Each score info box takes up 30% of the container */
-    text-align: center; /* Center the text inside the score info boxes */
+    width: 30%; 
+    text-align: center; 
 }
 
 /* Result Area Styling */
@@ -78,9 +77,9 @@ header {
 
 /* Restart Button Styling */
 #restart-game {
-    display: none; /* Hidden by default, will be shown via JS */
-    width: 80%; /* Match other buttons */
-    margin: 1rem auto; /* Centered */
+    display: none; 
+    width: 80%; 
+    margin: 1rem auto; 
     padding: 1rem;
     border: none;
     border-radius: 0.5rem;
@@ -99,32 +98,32 @@ header {
 footer {
     margin-top: 2rem;
     padding: 1rem 0;
-    font-size: 1.2rem; /* Adjusted font size */
+    font-size: 1.2rem; 
 }
 
 /* Media Query for Desktop */
 @media (min-width: 60rem) {
     .btn {
-        width: 45%; /* Adjusted for larger screens */
-        padding: 1.5rem; /* Larger padding */
-        font-size: 2rem; /* Larger text */
+        width: 45%; 
+        padding: 1.5rem; 
+        font-size: 2rem; 
     }
 
     #restart-game {
-        width: 45%; /* Match other buttons */
-        padding: 1.5rem; /* Larger padding */
-        font-size: 2rem; /* Larger text */
+        width: 45%; 
+        padding: 1.5rem; 
+        font-size: 2rem; 
     }
 
     .scoreboard {
-        font-size: 2rem; /* Larger text for readability */
+        font-size: 2rem; 
     }
 
     .score-info {
-        width: 30%; /* Ensure it does not stretch too much */
+        width: 30%; 
     }
 
     header {
-        font-size: 3rem; /* Larger header font */
+        font-size: 3rem; 
     }
 }
