@@ -66,23 +66,23 @@ header {
 }
 
 /* Choices Display Styling */
+
 .choices-display {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 1rem 0;
 }
 
-.choice-display {
-    width: 30%;
+.choice-display, .result-area {
+    flex: 1;
     text-align: center;
 }
 
-.result-area {
-    width: 20%;
-    text-align: center;
+.choice-display img {
+    max-width: 100%;
+    height: auto;
 }
-
 
 
 /* Scoreboard Styling */
@@ -101,7 +101,9 @@ header {
 /* Result Area Styling */
 .result-area {
     margin: 1rem 0;
+    min-width: 20%;
 }
+
 
 /* Restart Button Styling */
 #restart-game {
@@ -135,6 +137,10 @@ footer {
         width: 45%; 
         padding: 1.5rem; 
         font-size: 2rem; 
+    }
+
+    .choice-display img {
+        max-width: 75%; 
     }
 
     #restart-game {
