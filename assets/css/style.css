@@ -1,117 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'nunito', sans-serif;
+body {
+    font-family: 'Nunito', sans-serif;
     background-color: #F8F8F8;
     color: #505050;
     text-align: center;
     padding: 1rem;
 }
 
-header{
+header {
     padding: 1.5rem 0;
-    font-size: 1.4rem;
+    font-size: 2.4rem; /* Increased font size */
     font-weight: 700;
 }
 
-/*buttom styling*/
-.btn{
-    display: inline-block;
-    width: 100%;
-    margin: 1rem auto;
-    padding: 1.1rem;
+/* Button styling */
+.btn {
+    display: block; /* Changed to block to fill the width of the container */
+    width: 80%; /* Adjusted width */
+    margin: 10px auto; /* Centered margin for auto left and right */
+    padding: 1rem; /* Uniform padding */
     border: none;
     border-radius: 0.5rem;
-    background-color: #E0E0E0;
-    color: #443434;
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Slightly larger text */
     cursor: pointer;
     transition: 0.3s;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #C0C0C0;
 }
 
-/*Specific Button Colors*/
-.btn[data-type="rock"]{
-    background-color:#E0E0E0 ;
+/* Specific Button Colors */
+.btn[data-type="rock"] {
+    background-color: #E0E0E0;
 }
-.btn[data-type="paper"]{
-    background-color:#C0C0C0 ;
+
+.btn[data-type="paper"] {
+    background-color: #C0C0C0;
 }
-.btn[data-type="scissors"]{
-    background-color:#A0A0A0 ;
+
+.btn[data-type="scissors"] {
+    background-color: #A0A0A0;
 }
+
 .btn[data-type="lizard"] {
     background-color: #808080;
 }
-.btn[data-type="spock"]{
-    background-color:#505050 ;
+
+.btn[data-type="spock"] {
+    background-color: #505050;
 }
 
-/*scorboard Styling */
-.scoreboard-area{
-    margin-top: 2rem;
-    font-size: 1.6rem;
+/* Scoreboard Styling */
+.scoreboard {
+    display: flex;
+    justify-content: space-around; /* Distributes space around elements */
+    margin: 1rem 0; /* Top and bottom margin */
+    font-size: 1.2rem; /* Adjusted font size */
 }
 
+.score-info {
+    width: 30%; /* Each score info box takes up 30% of the container */
+    text-align: center; /* Center the text inside the score info boxes */
+}
+
+/* Result Area Styling */
+.result-area {
+    margin: 1rem 0;
+}
 
 /* Restart Button Styling */
 #restart-game {
-    display: inline-block;
-    width: 100%; 
-    margin: 2rem auto; 
-    padding: 1.1rem;
+    display: none; /* Hidden by default, will be shown via JS */
+    width: 80%; /* Match other buttons */
+    margin: 1rem auto; /* Centered */
+    padding: 1rem;
     border: none;
     border-radius: 0.5rem;
-    background-color: #4CAF50; 
-    color: #FFFFFF; 
-    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: 0.3s;
 }
 
 #restart-game:hover {
-    background-color: #45A049; 
+    background-color: #45A049;
 }
 
-
-/*Footer Styling*/
-footer{
+/* Footer Styling */
+footer {
     margin-top: 2rem;
     padding: 1rem 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem; /* Adjusted font size */
 }
 
-/* mediequery desktop */
-@media (min-width: 60rem) { 
+/* Media Query for Desktop */
+@media (min-width: 60rem) {
     .btn {
-        display: inline-block; 
-        width: 45%; 
-        padding: 1.5rem; 
-        font-size: 1.8rem; 
+        width: 45%; /* Adjusted for larger screens */
+        padding: 1.5rem; /* Larger padding */
+        font-size: 2rem; /* Larger text */
     }
 
     #restart-game {
-        width: 45%; 
-        padding: 1.5rem; 
-        font-size: 1.8rem; 
+        width: 45%; /* Match other buttons */
+        padding: 1.5rem; /* Larger padding */
+        font-size: 2rem; /* Larger text */
+    }
+
+    .scoreboard {
+        font-size: 2rem; /* Larger text for readability */
+    }
+
+    .score-info {
+        width: 30%; /* Ensure it does not stretch too much */
     }
 
     header {
-        font-size: 2.8rem; 
+        font-size: 3rem; /* Larger header font */
     }
-
-    .scoreboard-area {
-        font-size: 1.8rem; 
-    }
-
-    
 }
