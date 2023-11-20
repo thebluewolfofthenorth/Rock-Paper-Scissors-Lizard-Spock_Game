@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const triesLeftEl = document.getElementById("tries-left");
     const choiceButtons = document.querySelectorAll(".btn");
     const restartButton = document.getElementById("restart-game");
+    const playerChoiceDisplay = document.getElementById('player-choice-display');
+    const computerChoiceDisplay = document.getElementById('computer-choice-display');
+    const resultArea = document.querySelector('.result-area');
 
     let playerScore = 0;
     let computerScore = 0;
@@ -54,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-
     function updateScores(winner) {
         if (winner === 'player') {
             playerScore++;
@@ -63,27 +65,23 @@ document.addEventListener("DOMContentLoaded", () => {
             computerScore++;
             computerScoreEl.textContent = computerScore;
         }
-
     }
 
     function displayResult(playerChoice, computerChoice, winner) {
-        const resultArea = document.querySelector('.result-area');
-        const resultMessage = winner === 'tie' ? 'It is a tie!' : winner === 'player' ? 'You win!' : 'Computer wins!';
-        resultArea.innerHTML = `
-            <p>Your choice: <strong>${playerChoice}</strong></p>
-            <p>Computer's choice: <strong>${computerChoice}</strong></p>
-            <p>${resultMessage}</p>
-        `;
-    }
+        // Update the player and computer choice displays
+        playerChoiceDisplay.innerHTML = `<p>Your choice: <strong>${playerChoice}</strong></p>`;
+        computerChoiceDisplay.innerHTML = `<p>Computer's choice: <strong>${computerChoice}</strong></p>`;
 
+        // Update the result area with the result message
+        const resultMessage = winner === 'tie' ? 'It is a tie!' : winner === 'player' ? 'You win!' : 'Computer wins!';
+        resultArea.innerHTML = `<p>${resultMessage}</p>`;
+    }
 
     function endGame() {
         choiceButtons.forEach(button => button.disabled = true);
-        const resultArea = document.querySelector('.result-area');
         resultArea.innerHTML += `<p>Game Over! Final Score - Player: ${playerScore}, Computer: ${computerScore}</p>`;
         restartButton.style.display = 'block';
     }
-
 
     function restartGame() {
         playerScore = 0;
@@ -93,11 +91,12 @@ document.addEventListener("DOMContentLoaded", () => {
         computerScoreEl.textContent = computerScore;
         triesLeftEl.textContent = triesLeft;
         
-        const resultArea = document.querySelector('.result-area');
-        resultArea.innerHTML = ''; 
-        restartButton.style.display = 'none'; 
+        playerChoiceDisplay.innerHTML = '';
+        computerChoiceDisplay.innerHTML = '';
+        resultArea.innerHTML = '';
+        restartButton.style.display = 'none';
         
-        choiceButtons.forEach(button => button.disabled = false); 
+        choiceButtons.forEach(button => button.disabled = false);
     }
 
 });
