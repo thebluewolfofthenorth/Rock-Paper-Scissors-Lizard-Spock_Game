@@ -282,4 +282,20 @@ footer {
     .score-info p {
         font-size: 1.2rem;
     }
+
+    .choice-display img {
+        max-width: 90%; 
+    }
+    
+    .result-area p {
+        font-size: 1.5rem;
+    }
+    
+  
+    #restart-game {
+        width: 50%; 
+        font-size: 1.5rem; 
+    }
+    
+    
 }
