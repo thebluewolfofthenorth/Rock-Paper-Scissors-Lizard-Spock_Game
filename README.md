@@ -182,7 +182,7 @@ Additional Features
 
 ## Testing
 
-Please refer to <a href="https://github.com/thebluewolfofthenorth/yoga-mindfullnes-app"><em>here<em></a> for more information on testing PUST-Yoga-and-mindfullnes
+Please refer to <a href="https://github.com/thebluewolfofthenorth/Rock-Paper-Scissors-Lizard-Spock_Game"><em>here<em></a> for more information on testing Rock paper Game
 
 ## Deployment 
 
