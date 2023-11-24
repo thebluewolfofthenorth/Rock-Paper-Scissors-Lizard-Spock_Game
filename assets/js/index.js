@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const startGameButton = document.getElementById("start-game");
-    const frontPage = document.getElementById("front-page");
-    const gameContent = document.querySelector("header");
     const playerScoreEl = document.getElementById("player-score");
     const computerScoreEl = document.getElementById("computer-score");
     const triesLeftEl = document.getElementById("tries-left");
@@ -30,11 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 endGame();
             }
         });
-    });
-
-    startGameButton.addEventListener("click", function () {
-        frontPage.style.display = "none";
-        gameContent.style.display = "block";
     });
 
     restartButton.addEventListener("click", function () {
@@ -75,10 +67,10 @@ document.addEventListener("DOMContentLoaded", () => {
             computerScoreEl.textContent = computerScore;
             document.getElementById("computer-info").classList.add("changed");
         }
-        setTimeout(() => {
-            document.getElementById("player-info").classList.remove("changed");
-            document.getElementById("computer-info").classList.remove("changed");
-        }, 500);
+         setTimeout(() => {
+        document.getElementById("player-info").classList.remove("changed");
+        document.getElementById("computer-info").classList.remove("changed");
+    }, 500);
     }
 
     function displayResult(playerChoice, computerChoice, winner) {
@@ -108,12 +100,12 @@ document.addEventListener("DOMContentLoaded", () => {
         playerScoreEl.textContent = playerScore;
         computerScoreEl.textContent = computerScore;
         triesLeftEl.textContent = triesLeft;
-
+        
         playerChoiceDisplay.innerHTML = '';
         computerChoiceDisplay.innerHTML = '';
         resultArea.innerHTML = '';
         restartButton.style.display = 'none';
-
+        
         choiceButtons.forEach(button => button.disabled = false);
     }
 
