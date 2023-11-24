@@ -61,10 +61,16 @@ document.addEventListener("DOMContentLoaded", () => {
         if (winner === 'player') {
             playerScore++;
             playerScoreEl.textContent = playerScore;
+            document.getElementById("player-info").classList.add("changed");
         } else if (winner === 'computer') {
             computerScore++;
             computerScoreEl.textContent = computerScore;
+            document.getElementById("computer-info").classList.add("changed");
         }
+         setTimeout(() => {
+        document.getElementById("player-info").classList.remove("changed");
+        document.getElementById("computer-info").classList.remove("changed");
+    }, 500);
     }
 
     function displayResult(playerChoice, computerChoice, winner) {

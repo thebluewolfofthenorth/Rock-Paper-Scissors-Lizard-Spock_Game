@@ -11,7 +11,6 @@ body {
     background-color: #F8F8F8;
     color: #505050;
     text-align: center;
-    padding: 1rem;
 }
 
 header {
@@ -26,7 +25,6 @@ header {
     justify-content: center;
     flex-wrap: nowrap;
     align-items: center;
-    overflow-x: auto;
 }
 
 
@@ -52,11 +50,14 @@ header {
     justify-content: center;
     align-items: center;
     flex: 0 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
-.btn:hover {
+.btn:hover, .btn:focus {
     background-color: #C0C0C0;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Specific Button Colors */
@@ -76,7 +77,8 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 1rem 0;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .choice-display, .result-area {
@@ -95,14 +97,18 @@ header {
 .scoreboard {
     display: flex;
     justify-content: space-around; 
-    margin: 1rem 0; 
+    margin: 1rem; 
     font-size: 1.2rem; 
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
 }
 
 .score-info {
     width: 30%; 
     text-align: center; 
+    padding: 0.5rem;
 }
+
 
 /* Result Area Styling */
 .result-area {
@@ -145,25 +151,54 @@ footer {
         font-size: 2rem; 
     }
 
+    .choices-display {
+        margin: 2rem 0; 
+    }
     .choice-display img {
         max-width: 75%; 
     }
 
-    #restart-game {
-        width: 45%; 
-        padding: 1.5rem; 
+
+    #choices {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        overflow-x: auto;
+        margin-top: 12rem;
+    }
+
+    .result-area p {
         font-size: 2rem; 
+    }
+
+    #restart-game {
+        width: 25%; 
+        padding: 1rem; 
+        font-size: 2rem; 
+        margin: 1rem auto;
     }
 
     .scoreboard {
         font-size: 2rem; 
+        margin: 2rem 0;
+        padding: 1rem;
     }
 
     .score-info {
         width: 30%; 
+        margin: 0 1rem;
     }
 
     header {
         font-size: 3rem; 
+    }
+
+    .choices-display, .result-area, #restart-game {
+        margin-top: 3rem; 
+    }
+
+    header h1 {
+        font-size: 4.4rem; 
     }
 }
