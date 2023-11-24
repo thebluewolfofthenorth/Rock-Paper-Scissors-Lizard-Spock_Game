@@ -26,7 +26,7 @@ This project is a web-based implementation of the popular game "Rock, Paper, Sci
 
 ## Demo
 
-The live demo of the game is in progress. https://thebluewolfofthenorth.github.io/yoga-mindfullnes-app/
+The live demo of the game is in progress. https://thebluewolfofthenorth.github.io/Rock-Paper-Scissors-Lizard-Spock_Game/
 
 ## Technologies Used
 
@@ -223,54 +223,26 @@ This will create a local clone of the repository in the current directory.
 
 You also can create and name the directory where the clone should be saved in, with adding the directory name after the <URL>. So the full command would look like this: git clone <URl> XXXX(This is a directory name)
 
-## Credits
-
-  ## Content
-- Yoga and Mindfulness Techniques: 
-   - Content for the Techniques page was inspired by [Yoga Journal](https://www.yogajournal.com/) and [Mindful](https://www.mindful.org/).
-   - [Introduction to Yoga - Harvard Health](https://www.health.harvard.edu/exercise-and-fitness/introduction-to-yoga-copy#:~:text=,health%20on%20many%20different%20levels): Provided insights into the health benefits of yoga on different levels.
-   - [Mindfulness Exercises - Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/consumer-health/in-depth/mindfulness-exercises/art-20046356#:~:text=Mindfulness%20is%20a%20type%20of,mind%20and%20help%20reduce%20stress): Offered a type of mental training to refocus the mind and help reduce stress.
-   - [An Introduction to Mindfulness - Oxygen Yoga and Fitness](https://oxygenyogaandfitness.com/an-introduction-to-mindfulness/#:~:text=In%20furtherance%20of%20incorporating%20mindfulness,focus%20of%20your%20yoga%20practice): Discussed the incorporation of mindfulness into the focus of yoga practice.
-   - [An Introduction to Mindfulness through Yoga, Tai Chi, and Meditation - CG Scholar](https://www.cgscholar.com/bookstore/works/an-introduction-to-mindfulness-through-yoga-tai-chi-and-meditation#:~:text=Though%20being%20mindful%20in%20the,yoga%2C%20tai%20chi%2C%20and%20meditation): Explored being mindful through yoga, tai chi, and meditation.
-   - [Common Yoga Poses - Greatist](https://greatist.com/move/common-yoga-poses#:~:text=,away%20from%20your%20ears%2C%20draw)
-   - [Yoga Poses for Beginners - Yoga Basics](https://www.yogabasics.com/practice/yoga-for-beginners/yoga-poses-beginners/#:~:text=,pose%20and%20cow%20pose)
-   - [Common Yoga Breathing Techniques - health.gov.capital](https://health.gov.capital/what-are-some-common-yoga-breathing-techniques/#:~:text=Here%20are%20some%20common%20yoga,the%20back%20of%20the%20throat)
-   - [Types of Yoga Breath - My Yoga Teacher](https://www.myyogateacher.com/articles/types-of-yoga-breath#)
-- Breathing Exercises: Information about breathing exercises was gathered from [Breathworks](https://www.breathworks-mindfulness.org.uk/).
-- Mindfulness Exercises:
-   - [Simple Ways to Practice Mindfulness - Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/consumer-health/in-depth/mindfulness-exercises/art-20046356#:~:text=There%20are%20many%20simple%20ways,sound%2C%20sight%2C%20smell%20and%20taste)
-   - [Mindfulness Techniques for Depression, Anger - Positive Psychology](https://positivepsychology.com/mindfulness-exercises-techniques-activities/#:~:text=Mindfulness%20Techniques%20for%20Depression%2C%20Anger%2C,has%20shown%20some%20promising%20results)
-   - [Best Mindfulness Exercises - Self](https://www.self.com/story/best-mindfulness-exercises#:~:text=Anxiety,Reviewed%20by%20Sabrina)
-   - [Mindfulness Activities - Healthline](https://www.healthline.com/health/mind-body/mindfulness-activities#:~:text=One%20of%20the%20most%20common,These%20exercises%20are)
-
-
-
-- The yoga and mindfulness techniques described in this project were inspired by [Source Name](source URL).
-- Imagery sourced from [Source Name](source URL).
-
 
    ### Media:
 
-   - background image on Home page came from <a href="https://www.pexels.com/">pexels</a>
+ - my img where also self-made using adobe photoshop to create simple img for the game elements
 
-   - images on other pages came from <a href="https://www.pexels.com/">unspash</a> and <a href="https://www.istockphoto.com">istockphoto</a>
+  - background pictures was taking from the internet. 
+ https://www.deviantart.com/mstrange221b/art/The-Big-Bang-Theory-Folder-icon-889259486
+
 
    ### Code: 
 
-   The Navigation Menu was build with a <a href="https://www.youtube.com/watch?v=8QKOaTYvYUA">YouTube tutorial</a> and the code is based on this video. 
-   To see the code click <a href="https://github.com/thebluewolfofthenorth/yoga-mindfullnes-app/blob/main/assets/css/style.css">here</a>
-
-   The  page was build, while using the "Love Running" project as Guideline.
-   To see the code click <a href="https://github.com/thebluewolfofthenorth/yoga-mindfullnes-app/blob/main/assets/css/style.css">here</a>
-
-      The  page was build, while using the "Sofing" project as Guideline.
-   To see the code click <a href="https://github.com/thebluewolfofthenorth/yoga-mindfullnes-app/blob/main/assets/css/style.css">here</a>
+ - all my code was self made with some base ideas taking from https://www.w3schools.com/ but nothing was taking from there
 
    ## Acknowledgements:
 
    thanks to my mentor Ronan to help me along to the completion of this project
 
+   - I chose to build a simple game with the intention of keeping it straightforward and saving time to incorporate more dynamics and animations. However, this didn't quite work out as planned. I encountered minor issues, like z-index problems, which caused significant challenges and took a long time to diagnose and resolve. In the end, I was quite satisfied with the game's functionality, especially the JavaScript aspects. The design could have been better, but with more time and if this were a full-time job, I believe I could have created something truly impressive.
+
 
 ## note:
 
-I had quite a lot of problem that I did not know how to fix and the time was running out from. I also have to say that I use a lot of code from different sources but made my own andI was pretty unsure on how to credit them. please note that README file I copy the structure form of other readme files found on github.  
+- I spend a lot of time learning about simple structure ideas not covered in the course, requiring extensive reading from w3schools on the basics. All of my code is self-created. It was disappointing to see my game fail the Lighthouse test on desktop due to several issues I wasn't aware of. It's possible to fix these, but I'll need more time to work on it and to further my understanding of the underlying concepts.
