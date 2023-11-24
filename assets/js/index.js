@@ -67,10 +67,10 @@ document.addEventListener("DOMContentLoaded", () => {
             computerScoreEl.textContent = computerScore;
             document.getElementById("computer-info").classList.add("changed");
         }
-         setTimeout(() => {
-        document.getElementById("player-info").classList.remove("changed");
-        document.getElementById("computer-info").classList.remove("changed");
-    }, 500);
+        setTimeout(() => {
+            document.getElementById("player-info").classList.remove("changed");
+            document.getElementById("computer-info").classList.remove("changed");
+        }, 500);
     }
 
     function displayResult(playerChoice, computerChoice, winner) {
@@ -100,12 +100,12 @@ document.addEventListener("DOMContentLoaded", () => {
         playerScoreEl.textContent = playerScore;
         computerScoreEl.textContent = computerScore;
         triesLeftEl.textContent = triesLeft;
-        
+
         playerChoiceDisplay.innerHTML = '';
         computerChoiceDisplay.innerHTML = '';
         resultArea.innerHTML = '';
         restartButton.style.display = 'none';
-        
+
         choiceButtons.forEach(button => button.disabled = false);
     }
 
