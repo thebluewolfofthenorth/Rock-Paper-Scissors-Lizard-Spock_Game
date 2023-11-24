@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    startGameButton.addEventListener("click", function() {
+    startGameButton.addEventListener("click", function () {
         frontPage.style.display = "none";
         gameContent.style.display = "block";
     });
