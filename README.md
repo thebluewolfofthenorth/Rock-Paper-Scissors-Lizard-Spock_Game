@@ -188,7 +188,7 @@ Please refer to <a href="https://github.com/thebluewolfofthenorth/Rock-Paper-Sci
 
 This site was depolyed to GitHub pages. The steps to deploy a site are shown below:
 
-1. In the GitHub Repository called <b>yoga-mindfullnes-app</b> click on the <b>Settings</b> button on the Repoitory navigation menu.
+1. In the GitHub Repository called <b>Rock-Paper-Scissors-Lizard-Spock_Game</b> click on the <b>Settings</b> button on the Repoitory navigation menu.
 
 2. In <b>Settings</b> on the left side, go down to the <b>Pages</b> item and click on it.
 
@@ -198,7 +198,8 @@ This site was depolyed to GitHub pages. The steps to deploy a site are shown bel
 
 5. Once you have selected the main branch, the page will automatically refresh to show a detailed ribbon display indicating that the deployment was successful.
 
-To get to the live link of the GitHub repository - click here: <a href="https://thebluewolfofthenorth.github.io/yoga-mindfullnes-app/">https://thebluewolfofthenorth.github.io/Rock-Paper-Scissors-Lizard-Spock_Game/
+To get to the live link of the GitHub repository - click here: <a href="[https://thebluewolfofthenorth.github.io/yoga-mindfullnes-app/](https://thebluewolfofthenorth.github.io/Rock-Paper-Scissors-Lizard-Spock_Game/
+)">https://thebluewolfofthenorth.github.io/Rock-Paper-Scissors-Lizard-Spock_Game/
 </a>
 
 
