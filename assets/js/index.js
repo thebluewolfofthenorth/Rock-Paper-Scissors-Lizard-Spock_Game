@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const startGameButton = document.getElementById("start-game");
+    const frontPage = document.getElementById("front-page");
+    const gameContent = document.querySelector("header");
     const playerScoreEl = document.getElementById("player-score");
     const computerScoreEl = document.getElementById("computer-score");
     const triesLeftEl = document.getElementById("tries-left");
@@ -27,6 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 endGame();
             }
         });
+    });
+
+    startGameButton.addEventListener("click", function() {
+        frontPage.style.display = "none";
+        gameContent.style.display = "block";
     });
 
     restartButton.addEventListener("click", function () {
